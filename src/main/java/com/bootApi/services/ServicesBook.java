@@ -43,6 +43,7 @@ public class ServicesBook {
 		try {
 		 //book = list.stream().filter(e -> e.getId() == id).findFirst().get();
 			 book = br.findById(id);
+			 System.out.println(book.getId());
 			}
 		catch(Exception e) {
 			e.printStackTrace();
