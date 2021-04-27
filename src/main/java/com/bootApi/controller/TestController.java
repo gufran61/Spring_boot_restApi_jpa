@@ -25,15 +25,14 @@ import com.bootApi.services.ServicesBook;
 public class TestController {
 	@Autowired
 	private ServicesBook sb;
-@GetMapping("/books")
-	public Book getBooks() {
-		Book book= new Book();
-		book.setAuthor("gufran");
-		book.setId(1);
-		book.setTitle("goodBook");
-		return book;
-		
-	}
+
+	/*
+	 * @GetMapping("/books") public Book getBooks() { Book book= new Book();
+	 * book.setAuthor("gufran"); book.setId(1); book.setTitle("goodBook"); return
+	 * book;
+	 * 
+	 * }
+	 */
 @GetMapping("/getAllBook")
 public ResponseEntity<List<Book>>getAllBook(){
 	List<Book> list = sb.getAllBook();
