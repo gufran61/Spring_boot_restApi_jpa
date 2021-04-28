@@ -16,7 +16,7 @@ public class Book {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 private int id;
 private String title;
-@OneToOne(cascade = CascadeType.ALL)
+@OneToOne(cascade = CascadeType.ALL )
 @JsonManagedReference
 private Author author;
 public Book(int id, String title,Author author) {

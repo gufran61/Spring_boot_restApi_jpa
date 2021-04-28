@@ -16,7 +16,7 @@ public class Author {
 	private String firstName;
 	private String lastName;
 	private String lanugage;
-	@OneToOne(mappedBy = "author")
+    @OneToOne(mappedBy = "author")
 	@JsonBackReference
 	private Book book;
 	
